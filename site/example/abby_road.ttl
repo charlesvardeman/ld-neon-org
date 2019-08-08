@@ -1,9 +1,34 @@
 @base <http://example.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rel: <http://www.perceive.net/schemas/relationship/> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix schema: <http://schema.org/> .
 @prefix geoschemas: <https://geoschemas.org/> .
+@prefix plot: <http://linked.data.gov.au/def/plot/> .
 
 <https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature ;
+schema:Name "Abby Road"@en ;
+rdfs:label "Abby Road"@en ;
+schema:description "The Abby Road (ABBY) field site is located in Yacolt Burn State Forest which is approximately 30 miles from Vancouver, WA and Portland, OR. Yacolt Burn State Forest is a relatively young growth industrial timber production forest. The Washington Department of Natural Resources (DNR) also allows an array of recreational activities including moutain biking, hiking and camping." ;
+<https://ld.neonscience.org/def/hasFieldOperationOffice> <https://ld.neonscience.org/Domain_16> ;
+schema:geo [
+        schema:latitude "40.75" ;
+        schema:longitude "73.98" ;
+        a schema:GeoCoordinates
+    ] ;
+schema:ContainsPlace <https://ld.neonscience.org/plots/ABBY_074> .
+
+
+<https://ld.neonscience.org/Domain_16> a <https://ld.neonscience.org/def/fieldOperationOffice>, schema:Place ;
+schema:telephone "360-566-2857" ;
+schema:address [
+        schema:addressLocality "Vancouver" ;
+        schema:addressRegion "WA" ;
+        schema:postalCode "98683" ;
+        schema:streetAddress "11211 SE Cardinal Court, Suite 120" ;
+        a schema:PostalAddress
+    ] .
+
+
+<https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschema:ResearchSite, plot:Site ;
+plot:siteDescription "Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure." .
