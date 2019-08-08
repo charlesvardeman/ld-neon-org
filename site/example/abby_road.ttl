@@ -1,0 +1,9 @@
+@base <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rel: <http://www.perceive.net/schemas/relationship/> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix schema: <http://schema.org/> .
+@prefix geoschemas: <https://geoschemas.org/> .
+
+<https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature ;
