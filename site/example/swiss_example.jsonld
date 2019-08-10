@@ -1,0 +1,16 @@
+{ "@graph": [
+    { "@id": "https://ld.geo.admin.ch/boundaries/municipality/296",
+      "@type" : [ "http://schema.org/AdministrativeArea" ,
+        "http://www.opengis.net/ont/geosparql#Feature" ] ,
+      "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ { "@id": "http://classifications.data.admin.ch/municipality/296"} ,
+        { "@id": "http://www.wikidata.org/entity/Q64873"} ] ,
+      "http://www.geonames.org/ontology#featureCode" : [ { "@id": "http://www.geonames.org/ontology#A.ADM3"} ] ,
+      "http://purl.org/dc/terms/hasVersion" : [ { "@id": "https://ld.geo.admin.ch/boundaries/municipality/296:2018"} ,
+        { "@id": "https://ld.geo.admin.ch/boundaries/municipality/296:2019"} ,
+        { "@id": "https://ld.geo.admin.ch/boundaries/municipality/296:2016"} ,
+        { "@id": "https://ld.geo.admin.ch/boundaries/municipality/296:2017"} ] ,
+      "http://schema.org/hasMap" : [ { "@id": "https://map.geo.admin.ch/?ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill=296"} ] ,
+      "http://schema.org/name" : [ { "@value" : "Illnau-Effretikon" } ] ,
+      "https://ld.geo.admin.ch/def/bfsNumber" : [ 296 ] ,
+      "http://schema.org/sameAs" : [ { "@id": "http://api3.geo.admin.ch/rest/services/api/MapServer/ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill/296?geometryFormat=geojson"} ] }
+] }
