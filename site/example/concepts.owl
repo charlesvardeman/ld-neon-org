@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://ld.neonscience.org/def#"
+     xml:base="https://ld.neonscience.org/def"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://ld.neonscience.org/def">
+        <owl:versionIRI rdf:resource="https://ld.neonscience.org/def/2019/v1"/>
+        <rdfs:comment>Neon Field Site Vocabulary Concepts extracted from javascript code that generates leaflet maps for neon field site.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ld.neonscience.org/def#locationType -->
+
+    <owl:ObjectProperty rdf:about="https://ld.neonscience.org/def#locationType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://ld.neonscience.org/def#plotType -->
+
+    <owl:ObjectProperty rdf:about="https://ld.neonscience.org/def#plotType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://ld.neonscience.org/def#AOSReachBottom -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#AOSReachBottom">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>This marks the bottom of the aquatic observational sampling reach for streams and rivers. Observational sampling activities may include: Reaeration sampling; water chemistry, isotopes, dissolved gas; zooplankton, phytoplankton; secchi depth profile; bathymetric and morphologic mapping; discharge; sediment chemistry; riparian assessment; macroinvertebrates, plants, algae, and microbes; and fish.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#AOSReachTop -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#AOSReachTop">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>This marks the top of the aquatic observational sampling reach for streams and rivers. Observational sampling activities may include: Reaeration sampling;  water chemistry, isotopes, dissolved gas; zooplankton, phytoplankton; secchi depth profile; bathymetric and morphologic mapping; discharge; sediment chemistry; riparian assessment; macroinvertebrates, plants, algae, and microbes; and fish.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Airshedboundary -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Airshedboundary">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Boundary"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Aquatic -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Aquatic">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#FieldSite"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#BasePlot -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#BasePlot">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Boundary -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Boundary">
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Buoy -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Buoy">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>Data collected include: water temperature, conductivity, water depth relative to bottom of the water body, PAR (below water), chlorophyll a, dissolved oxygen, pH, turbidity, SUNA nitrate analyzer, fluorescent dissolved organic matter (fDOM)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Domain -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Domain">
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#FieldSite -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#FieldSite">
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Grid -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Grid">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#GroundWaterWell -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#GroundWaterWell">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>Sensors measure high temporal resolution groundwater elevation (pressure transducer-based), temperature, and specific conductance.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#InletLoc -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#InletLoc">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>INLET SENSOR STATION: Data collected include: water temperature, water level (pressure transducer-based), and PAR (below water)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Location -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Location">
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#MetStation -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#MetStation">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>Data collected via the shore meteorological station are comparable with flux tower measurements at terrestrial sites. Above water met stations on buoys are unique with different sensors and data frequencies due to power and data storage constraints.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#MosquitoPlot -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#MosquitoPlot">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#OutletLoc -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#OutletLoc">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>OUTLET SENSOR STATION: Data collected include: water temperature, water level (pressure transducer-based), PAR (below water)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Phenology -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Phenology">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Plot -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Plot">
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#ReachBottom -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#ReachBottom">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>Wadeable stream measurements include: water temperature, conductivity, water level (pressure transducer-based), PAR (below water), chlorophyll a, dissolved oxygen, pH, turbidity, SUNA nitrate analyzer, and fluorescent dissolved organic matter (fDOM)</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#ReachTop -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#ReachTop">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>&apos;Wadeable stream measurements include: water temperature, conductivity, water level (pressure transducer-based), PAR (below water), chlorophyll a, dissolved oxygen, pH, and turbidity. At non-wadeable rivers only water level (pressure transducer-based) is measured.&apos;</rdfs:isDefinedBy>
+        <rdfs:label>ReachUpper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#RiparianAssessment -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#RiparianAssessment">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>Locations for assessment of riparian vegetation composition and physical structure in lakes, non-wadeable rivers and wadeable streams; and assessment of riparian vegetation percent cover in wadeable streams.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#SamplingBoundary -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#SamplingBoundary">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Boundary"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#SensorStation -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#SensorStation">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#StaffGuage -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#StaffGuage">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>&apos;Gauge height, in meters, measured at lakes, wadeable rivers and non-wadeable streams. A phenocam is installed near most gauges. It collects RGB and IR images of the lake, river, or stream vegetation, stream surface, and stream gauge every 15 minutes.&apos;</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#StaffGuageCamera -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#StaffGuageCamera">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+        <rdfs:isDefinedBy>A phenocam thar is installed near most gauges. It collects RGB and IR images of the lake, river, or stream vegetation, stream surface, and stream gauge every 15 minutes.</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Terrestrial -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Terrestrial">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#FieldSite"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#TickPlot -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#TickPlot">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#Tower -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#Tower">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Location"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#TowerPlot -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#TowerPlot">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Plot"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#birdGrid -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#birdGrid">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Grid"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+    
+
+
+    <!-- https://ld.neonscience.org/def#mammalGrid -->
+
+    <owl:Class rdf:about="https://ld.neonscience.org/def#mammalGrid">
+        <rdfs:subClassOf rdf:resource="https://ld.neonscience.org/def#Grid"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0003-4091-6059"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
