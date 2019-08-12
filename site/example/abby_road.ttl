@@ -4,9 +4,11 @@
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @prefix schema: <http://schema.org/> .
 @prefix geoschemas: <https://geoschemas.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix plot: <http://linked.data.gov.au/def/plot/> .
+@prefix sosa: <http://www.w3.org/ns/sosa#> .
 
-<https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature ;
+<https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature, plot:Location ;
 schema:Name "Abby Road"@en ;
 rdfs:label "Abby Road"@en ;
 schema:description "The Abby Road (ABBY) field site is located in Yacolt Burn State Forest which is approximately 30 miles from Vancouver, WA and Portland, OR. Yacolt Burn State Forest is a relatively young growth industrial timber production forest. The Washington Department of Natural Resources (DNR) also allows an array of recreational activities including moutain biking, hiking and camping." ;
@@ -16,8 +18,19 @@ schema:geo [
         schema:longitude "73.98" ;
         a schema:GeoCoordinates
     ] ;
-geosparql:hasGeometry <http:/ld.neonscience.org/geo/abbygeo> ;
-schema:ContainsPlace <https://ld.neonscience.org/plots/ABBY_074> .
+geosparql:hasExactGeometry <http:/ld.neonscience.org/geo/abbygeo> ;
+schema:ContainsPlace <https://ld.neonscience.org/plots/ABBY_074> ;
+schema:ContainedInPlace <https://ld.neonscience.org/locations/YBSF> .
+
+
+<https://ld.neonscience.org/places/YBSF> a schema:Place, schema:AdministrativeArea ;
+schema:Name "Yacolt Burn State Forest" ;
+rdfs:comment "The forest is named for the dozens of wildfires that ravaged Clark, Cowlitz and Skamania counties in southwest Washington during September 1902. With no organized system for fighting wildfires, the fires spread across nearly 239,000 acres and caused 38 deaths and widespread property losses. An extended period of hot, dry weather; high wind; an over-accumulation of timber harvest slash; and human carelessness are among the frequently cited causes of these fires. In response, the Washington Legislature established a state fire warden the following year. In 1908, private landowners formed the Washington Fire Protection Association and funded a system of fire wardens and a program of fire prevention on private lands. " ;
+schema:samePlaceAs <https://www.dnr.wa.gov/Yacolt> ;
+skos:related <https://www.wikidata.org/wiki/Q8046471> ;
+rdfs:seeAlso  <https://en.wikipedia.org/wiki/Yacolt_Burn> .
+
+
 
 
 <http:/ld.neonscience.org/geo/abbygeo> 
@@ -34,7 +47,7 @@ schema:ContainsPlace <https://ld.neonscience.org/plots/ABBY_074> .
       4.8842353  52.375108
     ))"^^geosparql:wktLiteral ;
 
-<https://ld.neonscience.org/Domain_16> a <https://ld.neonscience.org/def/fieldOperationOffice>, schema:Place ;
+<https://ld.neonscience.org/domains/domain_16> a <https://ld.neonscience.org/def/fieldOperationOffice>, schema:Place ;
 schema:telephone "360-566-2857" ;
 schema:address [
         schema:addressLocality "Vancouver" ;
@@ -45,5 +58,6 @@ schema:address [
     ] .
 
 
-<https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschema:ResearchSite, plot:Site ;
-plot:siteDescription "Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure." .
+<https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschema:ResearchSite, plot:Site, geosparql:Feature, sosa:FeatureOfInterest ;
+plot:siteDescription "Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure." ;
+sosa:isSampleOf <https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> .

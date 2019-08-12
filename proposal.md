@@ -2,7 +2,9 @@
 
 ## Leverage some of Zazuko infrastructure
 
-[Zazuko](https://zazuko.com/) has built an open source linked data cyberinfrastructure as part of it's collaboration with the Swiss Government. The idea would be to create a linked data version of the existing field site landing pages. For example, [Abby Road](https://www.neonscience.org/field-sites/field-sites-map/ABBY) much like geo.admin.ch does for [Illnau-Effretikon](https://ld.geo.admin.ch/boundaries/municipality/296). This would require customizing [trifd](https://github.com/zazuko/trifid). Trifid requires a triple store with SPARQL endpoint which would be provided by the [OGC Geosparql enabled](https://jena.apache.org/documentation/geosparql/geosparql-fuseki) version of [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/). Additionally, landing pages would be built out for [observed properties](http://linkeddata.tern.org.au/viewer/corveg/id/http://linked.data.gov.au/def/corveg-cv/op) as created for the Australian TERN project. Abby Road plot descriptions would be modeled using the [TERN PLOT Ontology](http://www.linked.data.gov.au/def/plot/). A demonstrator data set landing page for Abby Road would be created with embedded Schema.org dataset description markup. The markup would be populated in part by SPARQL queries to ld.neon.org and validated using W3C [SHACL](https://www.w3.org/TR/shacl/). This can be extended in the future to generate the landing pages themselves using work [currently being developed by Tim Berners-Lee and the W3c](https://www.w3.org/DesignIssues/Footprints.html). The [ESIP schema.org dataset description](https://github.com/ESIPFed/science-on-schema.org/blob/master/guides/Dataset.md) would be extended to show how use the community standard [SWEET](https://github.com/ESIPFed/sweet) and ENVO(https://github.com/EnvironmentOntology/envo) ontologies as linked data using the schema.org additionalType and additionalProperty attributes. Lastly, a sample pipeline would be created to populate additional linked data using [Linked Data Pipelines](https://github.com/zazuko/barnard59-main) that use [rml](http://rml.io) to populate linked data from other data sources such as relational database tables. Tools like the [RMLmapper](https://github.com/RMLio/rmlmapper-java) can generate new field-sites automatically by mapping existing NEON database resources. Zazuko has also created a [Domain Specific Language for RML mapping](https://zazuko.com/blog/rdf-and-dsl-a-perfect-match/) with [mapping examples](https://github.com/zazuko/rdf-mapping-dsl-user) The resultant demonstrator would be provided as a set of [docker containers](https://www.docker.com/) orchestrated by [docker-compose](https://docs.docker.com/compose/).
+[Zazuko](https://zazuko.com/) has built an open source linked data cyberinfrastructure as part of it's collaboration with the Swiss Government. The idea would be to create a linked data version of the existing field site landing pages. For example, [Abby Road](https://www.neonscience.org/field-sites/field-sites-map/ABBY) much like geo.admin.ch does for [Illnau-Effretikon](https://ld.geo.admin.ch/boundaries/municipality/296). This would require customizing [trifd](https://github.com/zazuko/trifid). Trifid requires a triple store with SPARQL endpoint which would be provided by the [OGC Geosparql enabled](https://jena.apache.org/documentation/geosparql/geosparql-fuseki) version of [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/). Additionally, landing pages would be built out for [observed properties](http://linkeddata.tern.org.au/viewer/corveg/id/http://linked.data.gov.au/def/corveg-cv/op) as created for the Australian TERN project. Abby Road plot descriptions would be modeled using the [TERN PLOT Ontology](http://www.linked.data.gov.au/def/plot/). A demonstrator data set landing page for Abby Road would be created with embedded Schema.org dataset description markup. Best practices from the OGC/W3C [Spatial Data on the Web Best Practices](https://w3c.github.io/sdw/bp/) will be followed for defining spatial relations. The markup would be populated in part by SPARQL queries to ld.neon.org and validated using W3C [SHACL](https://www.w3.org/TR/shacl/). This can be extended in the future to generate the landing pages themselves using work [currently being developed by Tim Berners-Lee and the W3c](https://www.w3.org/DesignIssues/Footprints.html). The [ESIP schema.org dataset description](https://github.com/ESIPFed/science-on-schema.org/blob/master/guides/Dataset.md) would be extended to show how use the community standard [SWEET](https://github.com/ESIPFed/sweet) and ENVO(https://github.com/EnvironmentOntology/envo) ontologies as linked data using the schema.org additionalType and additionalProperty attributes. Lastly, a sample pipeline would be created to populate additional linked data using [Linked Data Pipelines](https://github.com/zazuko/barnard59-main) that use [rml](http://rml.io) to populate linked data from other data sources such as relational database tables. Tools like the [RMLmapper](https://github.com/RMLio/rmlmapper-java) can generate new field-sites automatically by mapping existing NEON database resources. Zazuko has also created a [Domain Specific Language for RML mapping](https://zazuko.com/blog/rdf-and-dsl-a-perfect-match/) with [mapping examples](https://github.com/zazuko/rdf-mapping-dsl-user) The resultant demonstrator would be provided as a set of [docker containers](https://www.docker.com/) orchestrated by [docker-compose](https://docs.docker.com/compose/).
+
+Neon specific ontologies and vocabularies will be exposed using the ["Five Stars of Linked Vocabulary Use"](http://www.semantic-web-journal.net/content/five-stars-linked-data-vocabulary-use) guidance.
 
 Metadata markup in JSON-LD and Schema.org for dataset landing pages would then be generated by querying the ld.neonscience.org SPARAL endpoint to discover the dataset endpoint. For example using the [nuxtjs](https://nuxtjs.org) for adding [async JSON-LD annotations](https://gatemill.com/tutorials/how-to-add-async-json-ld-structured-data-to-a-nuxt-js-web-app). The structuredData object in the following code could be generated via template and a sparql query to ld.neonscience.org to populate the template.
 
@@ -29,4 +31,32 @@ export default {
   }
 }
 </script>
+```
+
+Best practices from the OGC/W3C [Spatial Data on the Web Best Practices](https://w3c.github.io/sdw/bp/) illustrate the issue with schema:Place from
+Section [3.6 Defining that two places are the same](https://w3c.github.io/sdw/bp/#c-sameplaceas):
+
+
+```
+Given that the notion of place concerns a social perspective, we consider it to be distinct from location which is based on geometry. As a result, samePlaceAs can be used to assert the imprecise, social perceptions about the equality of places. samePlaceAs does not overlap with the topological relationships described later in this best practice document that can be computed from geometry.
+
+As with all assertions of an imprecise nature that lack formal semantics, samePlaceAs may have limited value for semantic reasoning. Exactly what constitutes the ‘same place’ will always be somewhat debatable. For example, is ancient Byzantium the same place as modern Istanbul? Is a historical hotel that was moved across the street to save it from demolition in a redevelopment scheme that same place that it used to be?
+
+[SCHEMA-ORG] would be a good home for this link relation type. The definition would be something as follows:
+
+Thing > Property > samePlaceAs
+
+Used to relate two places that are perceived to be the same; the physical extent of the two places should be broadly comparable but do not need to be equal in a topological or geometric sense.
+
+Values expected to be one of these types: Place
+
+Used on these types: Place
+
+However, the current definition of schema:Place is a little too general:
+
+Entities that have a somewhat fixed, physical extension.
+
+This definition includes anything with spatial extent (i.e. all Spatial Things); we would consider "my car keys" to be a Spatial Thing, but not a place.
+
+A continuation of the SDW WG intends to formally define samePlaceAs.
 ```
