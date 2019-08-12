@@ -1,4 +1,4 @@
-@base <http://example.org/> .
+@base <http://ld.neonscience.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
@@ -7,6 +7,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix plot: <http://linked.data.gov.au/def/plot/> .
 @prefix sosa: <http://www.w3.org/ns/sosa#> .
+@prefix envo: <http://purl.obolibrary.org/obo/> .
 
 <https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature, plot:Location ;
 schema:Name "Abby Road"@en ;
@@ -45,7 +46,7 @@ rdfs:seeAlso  <https://en.wikipedia.org/wiki/Yacolt_Burn> .
       4.8843200  52.374996 , 4.884255 52.374926 , 
       4.8843289  52.374901 , 4.884451 52.375034 , 
       4.8842353  52.375108
-    ))"^^geosparql:wktLiteral ;
+    ))"^^geosparql:wktLiteral .
 
 <https://ld.neonscience.org/domains/domain_16> a <https://ld.neonscience.org/def/fieldOperationOffice>, schema:Place ;
 schema:telephone "360-566-2857" ;
@@ -61,3 +62,9 @@ schema:address [
 <https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschema:ResearchSite, plot:Site, geosparql:Feature, sosa:FeatureOfInterest ;
 plot:siteDescription "Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure." ;
 sosa:isSampleOf <https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> .
+
+
+<https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> a envo:ENVO_01000408 ;
+rdf:comment "Defined as a ENVO EnvironmentalZone" ;
+rdf:comment "Need editors comments" ;
+rdf:comment "May need to define NEON def/EnvironmentalZone" .
