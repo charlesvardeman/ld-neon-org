@@ -2,6 +2,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix schema: <http://schema.org/> .
 @prefix geoschemas: <https://geoschemas.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -9,7 +10,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa#> .
 @prefix envo: <http://purl.obolibrary.org/obo/> .
 
-<https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschema:ResearchSite, geosparql:Feature, plot:Location ;
+<https://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschemas:ResearchSite, geosparql:Feature, plot:Location ;
 schema:Name "Abby Road"@en ;
 rdfs:label "Abby Road"@en ;
 schema:description "The Abby Road (ABBY) field site is located in Yacolt Burn State Forest which is approximately 30 miles from Vancouver, WA and Portland, OR. Yacolt Burn State Forest is a relatively young growth industrial timber production forest. The Washington Department of Natural Resources (DNR) also allows an array of recreational activities including moutain biking, hiking and camping." ;
@@ -36,17 +37,9 @@ rdfs:seeAlso  <https://en.wikipedia.org/wiki/Yacolt_Burn> .
 
 <http:/ld.neonscience.org/geo/abbygeo> 
   a geosparql:Geometry ;
-  geosparql:asWKT 
-    "POLYGON ((
-      4.8842353  52.375108 , 4.884276 52.375153 , 
-      4.8842567  52.375159 , 4.883981 52.375254 , 
-      4.8838502  52.375109 , 4.883819 52.375075 , 
-      4.8841037  52.374979 , 4.884143 52.374965 , 
-      4.8842069  52.375035 , 4.884263 52.375016 , 
-      4.8843200  52.374996 , 4.884255 52.374926 , 
-      4.8843289  52.374901 , 4.884451 52.375034 , 
-      4.8842353  52.375108
-    ))"^^geosparql:wktLiteral .
+  geosparql:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> LINESTRING(49.7676213331572 -7.5561414037174925, 49.76712898169763 -7.556084949320357"^^geosparql:wktLiteral ;
+  a sf:LineString .
+
 
 <https://ld.neonscience.org/domains/domain_16> a <https://ld.neonscience.org/def/fieldOperationOffice>, schema:Place ;
 schema:telephone "360-566-2857" ;
@@ -59,7 +52,7 @@ schema:address [
     ] .
 
 
-<https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschema:ResearchSite, plot:Site, geosparql:Feature, sosa:FeatureOfInterest ;
+<https://ld.neonscience.org/plots/ABBY_074> a schema:Place, geoschemas:ResearchSite, plot:Site, geosparql:Feature, sosa:FeatureOfInterest ;
 plot:siteDescription "Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure." ;
 sosa:isSampleOf <https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> .
 

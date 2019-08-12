@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:envo="http://purl.obolibrary.org/obo/" xmlns:geoschemas="https://geoschemas.org/" xmlns:geosparql="http://www.opengis.net/ont/geosparql#" xmlns:plot="http://linked.data.gov.au/def/plot/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sf="http://www.opengis.net/ont/sf#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:sosa="http://www.w3.org/ns/sosa#">
+  <rdf:Description rdf:nodeID="genid1">
+    <schema:latitude>40.75</schema:latitude>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <schema:longitude>73.98</schema:longitude>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="http://schema.org/GeoCoordinates"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <rdf:type rdf:resource="https://geoschemas.org/ResearchSite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <rdf:type rdf:resource="http://linked.data.gov.au/def/plot/Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <schema:Name xml:lang="en">Abby Road</schema:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <rdfs:label xml:lang="en">Abby Road</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <schema:description>The Abby Road (ABBY) field site is located in Yacolt Burn State Forest which is approximately 30 miles from Vancouver, WA and Portland, OR. Yacolt Burn State Forest is a relatively young growth industrial timber production forest. The Washington Department of Natural Resources (DNR) also allows an array of recreational activities including moutain biking, hiking and camping.</schema:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <ns0:hasFieldOperationOffice xmlns:ns0="https://ld.neonscience.org/def/" rdf:resource="https://ld.neonscience.org/Domain_16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <schema:geo rdf:nodeID="genid1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <geosparql:hasExactGeometry rdf:resource="http:/ld.neonscience.org/geo/abbygeo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <schema:ContainsPlace rdf:resource="https://ld.neonscience.org/plots/ABBY_074"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/field-sites/ABBY">
+    <schema:ContainedInPlace rdf:resource="https://ld.neonscience.org/locations/YBSF"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <rdf:type rdf:resource="http://schema.org/AdministrativeArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <schema:Name>Yacolt Burn State Forest</schema:Name>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <rdfs:comment>The forest is named for the dozens of wildfires that ravaged Clark, Cowlitz and Skamania counties in southwest Washington during September 1902. With no organized system for fighting wildfires, the fires spread across nearly 239,000 acres and caused 38 deaths and widespread property losses. An extended period of hot, dry weather; high wind; an over-accumulation of timber harvest slash; and human carelessness are among the frequently cited causes of these fires. In response, the Washington Legislature established a state fire warden the following year. In 1908, private landowners formed the Washington Fire Protection Association and funded a system of fire wardens and a program of fire prevention on private lands. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <schema:samePlaceAs rdf:resource="https://www.dnr.wa.gov/Yacolt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <skos:related rdf:resource="https://www.wikidata.org/wiki/Q8046471"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/places/YBSF">
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Yacolt_Burn"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http:/ld.neonscience.org/geo/abbygeo">
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http:/ld.neonscience.org/geo/abbygeo">
+    <geosparql:asWKT rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">&lt;http://www.opengis.net/def/crs/EPSG/0/4326&gt; LINESTRING(49.7676213331572 -7.5561414037174925, 49.76712898169763 -7.556084949320357</geosparql:asWKT>
+  </rdf:Description>
+  <rdf:Description rdf:about="http:/ld.neonscience.org/geo/abbygeo">
+    <rdf:type rdf:resource="http://www.opengis.net/ont/sf#LineString"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <schema:addressLocality>Vancouver</schema:addressLocality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <schema:addressRegion>WA</schema:addressRegion>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <schema:postalCode>98683</schema:postalCode>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <schema:streetAddress>11211 SE Cardinal Court, Suite 120</schema:streetAddress>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:type rdf:resource="http://schema.org/PostalAddress"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/domains/domain_16">
+    <rdf:type rdf:resource="https://ld.neonscience.org/def/fieldOperationOffice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/domains/domain_16">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/domains/domain_16">
+    <schema:telephone>360-566-2857</schema:telephone>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/domains/domain_16">
+    <schema:address rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <rdf:type rdf:resource="http://schema.org/Place"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <rdf:type rdf:resource="https://geoschemas.org/ResearchSite"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <rdf:type rdf:resource="http://linked.data.gov.au/def/plot/Site"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <rdf:type rdf:resource="http://www.w3.org/ns/sosa#FeatureOfInterest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <plot:siteDescription>Below Ground Biomass Coring , Coarse Downed Wood, Digital Hemispherical Photos for Leaf Area Index, Herbaceous Productivity, Litter and Fine Woody Debris, Vegetation Structure.</plot:siteDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/plots/ABBY_074">
+    <sosa:isSampleOf rdf:resource="https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
+    <rdf:comment>Defined as a ENVO EnvironmentalZone</rdf:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
+    <rdf:comment>Need editors comments</rdf:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
+    <rdf:comment>May need to define NEON def/EnvironmentalZone</rdf:comment>
+  </rdf:Description>
+</rdf:RDF>
