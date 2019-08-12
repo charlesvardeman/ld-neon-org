@@ -33,6 +33,17 @@ export default {
 </script>
 ```
 
+Which would use this untested SPARQL query based on [stackoverflow example](https://stackoverflow.com/questions/47770930/sparql-query-for-all-objects-with-a-specific-prefix):
+
+```sparql
+PREFIX schema: <http://schema.org/>
+SELECT * {
+ ?s ?p ?o .
+ FILTER(isUri(?o) && STRSTARTS(STR(?o), STR(schema:)))
+}
+```
+
+## Spatial Data on the Web Best Practices
 Best practices from the OGC/W3C [Spatial Data on the Web Best Practices](https://w3c.github.io/sdw/bp/) illustrate the issue with schema:Place from
 Section [3.6 Defining that two places are the same](https://w3c.github.io/sdw/bp/#c-sameplaceas):
 
