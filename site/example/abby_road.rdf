@@ -10,9 +10,6 @@
     <rdf:type rdf:resource="http://schema.org/GeoCoordinates"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ld.neonscience.org/field-sites/ABBY">
-    <rdf:type rdf:resource="http://schema.org/Place"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ld.neonscience.org/field-sites/ABBY">
     <rdf:type rdf:resource="http://geoschemas.org/ResearchSite"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ld.neonscience.org/field-sites/ABBY">
@@ -127,12 +124,15 @@
     <rdf:type rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000408"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
-    <rdf:comment>Defined as a ENVO EnvironmentalZone</rdf:comment>
+    <rdfs:comment>Defined as a ENVO EnvironmentalZone</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
-    <rdf:comment>Need editors comments</rdf:comment>
+    <rdfs:comment>Need editors comments</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://ld.neonscience.org/EnvitonmentalZones/ABBYZone1">
-    <rdf:comment>May need to define NEON def/EnvironmentalZone</rdf:comment>
+    <rdfs:comment>May need to define NEON def/EnvironmentalZone</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://geoschemas.org/ResearchSite">
+    <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
   </rdf:Description>
 </rdf:RDF>

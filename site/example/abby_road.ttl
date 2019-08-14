@@ -10,7 +10,7 @@
 @prefix sosa: <http://www.w3.org/ns/sosa#> .
 @prefix envo: <http://purl.obolibrary.org/obo/> .
 
-<http://ld.neonscience.org/field-sites/ABBY> a schema:Place, geoschemas:ResearchSite, geosparql:Feature, plot:Location ;
+<http://ld.neonscience.org/field-sites/ABBY> a geoschemas:ResearchSite, geosparql:Feature, plot:Location ;
 schema:Name "Abby Road"@en ;
 rdfs:label "Abby Road"@en ;
 schema:description "The Abby Road (ABBY) field site is located in Yacolt Burn State Forest which is approximately 30 miles from Vancouver, WA and Portland, OR. Yacolt Burn State Forest is a relatively young growth industrial timber production forest. The Washington Department of Natural Resources (DNR) also allows an array of recreational activities including moutain biking, hiking and camping." ;
@@ -58,6 +58,8 @@ sosa:isSampleOf <http://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> .
 
 
 <http://ld.neonscience.org/EnvitonmentalZones/ABBYZone1> a envo:ENVO_01000408 ;
-rdf:comment "Defined as a ENVO EnvironmentalZone" ;
-rdf:comment "Need editors comments" ;
-rdf:comment "May need to define NEON def/EnvironmentalZone" .
+rdfs:comment "Defined as a ENVO EnvironmentalZone" ;
+rdfs:comment "Need editors comments" ;
+rdfs:comment "May need to define NEON def/EnvironmentalZone" .
+
+geoschemas:ResearchSite rdfs:subClassOf schema:Place .
